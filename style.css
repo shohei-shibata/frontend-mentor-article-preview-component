@@ -1,0 +1,40 @@
+body {
+  background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  margin: 5vw;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-width: 90vw;
+}
+
+.card-image-container {
+  width: 200px;
+  height: 100%;
+  background-color: #aaa;
+}
+
+.card-text-container {
+  padding: 30px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card-image-container,
+  .card-text-container {
+    width: 100%;
+  }
+}
